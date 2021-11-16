@@ -1,4 +1,20 @@
 <resources>
     <string name="app_name">EjemploClase</string>
-    <string name="mainTitle">Manizales Go!</string>
+    <string name="mainTitle">Batman</string>
+    <string name="paragraph1TextBatman">
+        Batman, en español Hombre Murciélago, es un cómic creado por
+        los estadounidenses Bob Kane y Bill Finger, siendo en la actualidad propiedad de DC Comics.
+        Apareció por primera vez el 30 de marzo de 1939 en la revista Detective Comics #27
+        de la editorial National Publications.
+    </string>
+    <string name="paragraph2TextBatman">
+        La identidad secreta de Batman es Bruce Wayne, un multimillonario magnate empresarial y filántropo
+        dueño de Empresas Wayne en Gotham City. Después de presenciar el asesinato de sus padres juró venganza
+        contra los criminales. Se enfrenta física e intelectualmente y crea un traje inspirado en los murciélagos
+        para combatir el crimen, con sus gadgets de combate del baticinturón y sus vehículos.
+    </string>
+    <string name="paragraph3TextBatman">
+        A diferencia de los superhéroes, no tiene superpoderes, recurre a su intelecto y a aplicaciones científicas
+        y tecnológicas para crear armas y herramientas con las cuales lleva a cabo sus actividades.
+    </string>
 </resources>
