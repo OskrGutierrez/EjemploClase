@@ -17,4 +17,7 @@
         A diferencia de los superhéroes, no tiene superpoderes, recurre a su intelecto y a aplicaciones científicas
         y tecnológicas para crear armas y herramientas con las cuales lleva a cabo sus actividades.
     </string>
+    <string name="registroSuperheroe">Registro de Superhéroe</string>
+    <string name="registrar">Registrar</string>
+    <string name="nombre_Sh">Nombre:</string>
 </resources>
