@@ -21,8 +21,12 @@
     <string name="registrar">Registrar</string>
     <string name="nombre_Sh">Nombre:</string>
     <string name="estatura">Estatura</string>
-    <string name="mostrarinfo">"Nombre: %s,\nEstatura: %f\nGénero: %s"</string>
+    <string name="mostrarinfo">"Nombre: %s,\nEstatura: %f\nGénero: %s\nPoderes: %s"</string>
     <string name="genero">Género </string>
     <string name="femenino">Femenino</string>
     <string name="masculino">Masculino</string>
+    <string name="poderes">Poderes</string>
+    <string name="super_fuerza">Super Fuerza</string>
+    <string name="super_velocidad">Super Velocidad</string>
+    <string name="telequinesis">Telequinesis</string>
 </resources>

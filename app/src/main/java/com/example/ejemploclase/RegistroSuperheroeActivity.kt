@@ -3,10 +3,7 @@ package com.example.ejemploclase
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.RadioButton
-import android.widget.TextView
+import android.widget.*
 import com.google.android.material.textfield.TextInputEditText
 
 class RegistroSuperheroeActivity : AppCompatActivity() {
@@ -27,14 +24,22 @@ class RegistroSuperheroeActivity : AppCompatActivity() {
             val nombre : String = registroEditText.text.toString() //val nombre = registroEditText.text
             val estatura : Float = estaturaEditText.text.toString().toFloat()
             val genero: String
+            val fuerzaCheckBox: CheckBox = findViewById(R.id.super_fuerza_check_box)
+            val velocidadCheckBox: CheckBox = findViewById(R.id.velocidad_check_box)
+            val telequinesisCheckBox: CheckBox = findViewById(R.id.telequinesis_check_box)
+            var poderes= ""
 
             if (masculinoRadioButton.isChecked)
                 genero= getString(R.string.masculino)
             else
                 genero= getString(R.string.femenino)
 
+            if (fuerzaCheckBox.isChecked) poderes = getString(R.string.super_fuerza)
+            if (velocidadCheckBox.isChecked) poderes = poderes + " " + getString(R.string.super_velocidad)
+            if (telequinesisCheckBox.isChecked) poderes = poderes + " " + getString(R.string.telequinesis)
 
-            infoTextView.text = getString(R.string.mostrarinfo, nombre, estatura, genero) //Otra forma de usar setText --> registroEditText.setText("Hola bebe")
+
+            infoTextView.text = getString(R.string.mostrarinfo, nombre, estatura, genero, poderes) //Otra forma de usar setText --> registroEditText.setText("Hola bebe")
         }
     }
 }

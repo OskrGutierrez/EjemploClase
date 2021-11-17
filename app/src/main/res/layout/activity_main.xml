@@ -41,10 +41,10 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="393dp"
-        android:layout_height="626dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="0dp"
+        android:layout_height="616dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
@@ -82,10 +82,8 @@
             <TextView
                 android:id="@+id/textView3"
                 style="@style/paragraph_Text"
-                android:layout_width="363dp"
-                android:layout_height="154dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginEnd="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:text="@string/paragraph1TextBatman"
                 android:textAlignment="textStart"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -95,11 +93,9 @@
             <TextView
                 android:id="@+id/textView2"
                 style="@style/paragraph_Text"
-                android:layout_width="361dp"
-                android:layout_height="214dp"
-                android:layout_marginStart="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="15dp"
                 android:text="@string/paragraph2TextBatman"
                 android:textAlignment="textStart"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -109,15 +105,12 @@
             <TextView
                 android:id="@+id/textView4"
                 style="@style/paragraph_Text"
-                android:layout_width="362dp"
-                android:layout_height="125dp"
-                android:layout_marginStart="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="15dp"
                 android:text="@string/paragraph3TextBatman"
                 android:textAlignment="textStart"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.549"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -127,59 +120,62 @@
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="410dp"
+        android:layout_height="54dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/icono_inicio"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="50dp"
-                android:baselineAlignBottom="false"
-                android:textAlignment="center"
+                android:layout_weight="1"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/icono_buscar"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/icono_inicio" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/icono_buscar"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="60dp"
+                android:layout_weight="1"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintEnd_toStartOf="@+id/icono_favorito"
+                app:layout_constraintStart_toEndOf="@+id/icono_inicio"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/icono_favoritos" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/icono_favorito"
                 android:layout_width="30dp"
-                android:layout_height="36dp"
-                android:layout_marginStart="60dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintEnd_toStartOf="@+id/icono_usuario"
+                app:layout_constraintStart_toEndOf="@+id/icono_buscar"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/icono_buscar" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/icono_usuario"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintStart_toEndOf="@+id/icono_favorito"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/icono_comentarios" />
 
@@ -189,3 +185,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
