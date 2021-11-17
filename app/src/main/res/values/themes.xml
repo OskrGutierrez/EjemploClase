@@ -23,6 +23,11 @@
     <style name="paragraph_Text">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">#4D4C4E</item>
+    </style>
 
+    <style name="second_Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">italic</item>
     </style>
 </resources>
