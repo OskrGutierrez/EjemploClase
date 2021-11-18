@@ -21,7 +21,7 @@
     <string name="registrar">Registrar</string>
     <string name="nombre_Sh">Nombre:</string>
     <string name="estatura">Estatura</string>
-    <string name="mostrarinfo">"Nombre: %s,\nEstatura: %f\nGénero: %s\nPoderes: %s"</string>
+    <string name="mostrarinfo">"Nombre: %s,\nEstatura: %f\nGénero: %s\nPoderes: %s\nCiudad de Nacimiento: %s"</string>
     <string name="genero">Género </string>
     <string name="femenino">Femenino</string>
     <string name="masculino">Masculino</string>
@@ -29,4 +29,12 @@
     <string name="super_fuerza">Super Fuerza</string>
     <string name="super_velocidad">Super Velocidad</string>
     <string name="telequinesis">Telequinesis</string>
+    <string name="ciudad_nacimiento">Ciudad de Nacimiento</string>
+    <string-array name="lista_ciudades">
+        <item>Ciudad Gótica</item>
+        <item>Ciudad Central</item>
+        <item>Temiscira</item>
+        <item>Manizales</item>
+        <item>Arauca</item>
+    </string-array>
 </resources>
